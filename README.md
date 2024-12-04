@@ -54,7 +54,7 @@ This project provides tools to crawl web pages, extract Arabic content, and conv
 
 The converter saves the data to crawled_data.csv in the specified directory.
 **Example CSV Structure**
-| Document ID | URL                        | Title            | Section     | Text                          |
-|-------------|----------------------------|------------------|-------------|------------------------------ |
-|  1           | https://example.com/article1 | هذه فقرة تلخص الموضوع      |   المقدمة      |       عنوان المقالة       |
+| Document ID | URL                        | Title            | Section     | Text                         |
+|-------------|----------------------------|------------------|-------------|------------------------------|
+| 1           | https://example.com/article1 | عنوان المقالة   | المقدمة      | هذه فقرة تتحدث عن الموضوع.   |
 
