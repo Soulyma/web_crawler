@@ -27,28 +27,34 @@ This project provides tools to crawl web pages, extract Arabic content, and conv
 
 ### Example Output:
  The crawler saves the extracted data to crawled_data.json in the specified directory.
- Example JSON structure:
- [
-     {
-         "Document ID": 1,
-         "URL": "https://example.com/article1",
-         "Title": "عنوان المقالة",
-         "Content": [
-             {
-                 "section": "المقدمة",
-                 "text": "هذه فقرة تتحدث عن الموضوع."
-             },
-             {
-                 "section": "المقدمة",
-                 "text": "هذه فقرة تتحدث عن الموضوع."
-             },
-           ...
-         ]
+ 
+ **Example JSON Structure**
+```json
+[
+  {
+    "Document ID": 1,
+    "URL": "https://example.com/article1",
+    "Title": "عنوان المقالة",
+    "Content": [
+
+      {
+        "section": "المقدمة",
+        "text": "هذه فقرة تتحدث عن الموضوع."
+      },
+      {
+        "section": "الخاتمة",
+        "text": "هذه فقرة تلخص الموضوع."
      },
      ...
- ]
+    ]
+   ...
+  }
+]
+```
 
- The converter saves the data to crawled_data.csv in the specified directory.
- Example CSV structure:
- Document ID              	URL	                     Title	     Section	      Text  
-    1         "https://example.com/article1"     "هذه فقرة تتحدث عن الموضوع"    "المقدمة"   "عنوان المقالة"
+The converter saves the data to crawled_data.csv in the specified directory.
+**Example CSV Structure**
+| Document ID | URL                        | Title            | Section     | Text                          |
+|-------------|----------------------------|------------------|-------------|------------------------------ |
+|  1           | https://example.com/article1 | هذه فقرة تلخص الموضوع      |   المقدمة      |       عنوان المقالة       |
+
