@@ -20,10 +20,10 @@ This project provides tools to crawl web pages, extract Arabic content, and conv
  Includes structured headers such as "Document ID", "URL", "Title", "Section", and "Text".
 
 **Prerequisites**
- Python Version: Python 3.8 or higher.
- Required Libraries:
- beautifulsoup4
- requests
+ - Python Version: Python 3.8 or higher.
+ - Required Libraries:
+ - beautifulsoup4
+ - requests
 
 ### Example Output:
  The crawler saves the extracted data to crawled_data.json in the specified directory.
