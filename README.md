@@ -21,7 +21,6 @@ This project provides tools to crawl web pages, extract Arabic content, and conv
 
 **Prerequisites**
  - Python Version: Python 3.8 or higher.
-   Required Libraries:
  - beautifulsoup4
  - requests
 
